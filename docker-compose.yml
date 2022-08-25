@@ -1,0 +1,20 @@
+version: '3.0'
+services:
+  mariadb:
+    image: mariadb
+    container_name: service-mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: "aula"
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./volumes/mariadb:/var/lib/mysql
+    networks:
+      - aula-pos
+
+networks:
+  aula-pos:
+    #name: escolas-conectadas-net
+    driver: bridge

@@ -1,6 +1,7 @@
 import "reflect-metadata";
 require('dotenv').config();
 import { body, validationResult } from 'express-validator';
+import "./db/dataSource";
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
