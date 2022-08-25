@@ -6,7 +6,8 @@
   "author": "Clayton Ferraz <clayton.andrade@ifro.edu.br>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only src/server.ts"
+    "dev": "ts-node-dev --transpile-only src/server.ts",
+    "typeorm": "ts-node-dev  node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "body-parser": "^1.20.0",
